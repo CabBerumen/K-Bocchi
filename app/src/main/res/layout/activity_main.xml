@@ -33,5 +33,11 @@
         android:textColor="@color/teal_700"
         android:layout_marginLeft="50dp"
         />
+
+
     </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </LinearLayout>

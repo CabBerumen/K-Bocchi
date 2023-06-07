@@ -1,6 +1,7 @@
 package com.example.k_bocchi;
 
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -42,6 +43,12 @@ public class LogIn extends AppCompatActivity {
         editusuario = findViewById(R.id.user);
         editpass = findViewById(R.id.pass);
         botonlogin = findViewById(R.id.login);
+        archivo = this.getSharedPreferences("sesion", Context.MODE_PRIVATE);
+        if(archivo.contains("email")){
+            Intent inicio = new Intent(this, MainActivity.class);
+            startActivity(inicio);
+            finish();
+        }
 
         botonlogin.setOnClickListener(new View.OnClickListener() {
             HttpLoggingInterceptor loggin = new HttpLoggingInterceptor();

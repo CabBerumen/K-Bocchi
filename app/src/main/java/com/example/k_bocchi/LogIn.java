@@ -47,6 +47,7 @@ public class LogIn extends AppCompatActivity {
     GoogleSignInClient mGoogleSignInClient;
     FirebaseAuth mAuth;
 
+
     private ApiService apiService;
     EditText editusuario;
     EditText editpass;

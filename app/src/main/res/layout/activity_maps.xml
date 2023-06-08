@@ -26,6 +26,7 @@
         android:text="PRueba"
         android:textSize="50dp"
         android:layout_gravity="center"
+        android:textColor="@color/black"
         />
     </LinearLayout>
 

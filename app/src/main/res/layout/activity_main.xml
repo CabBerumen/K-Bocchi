@@ -5,7 +5,7 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#98E1EA"
+    android:background="#FFFFFF"
     android:fitsSystemWindows="true"
     tools:context=".MainActivity">
 
@@ -18,10 +18,18 @@
             android:id="@+id/toolbar"
             layout="@layout/toolbar"/>
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cerrar Sesion"
+            android:layout_gravity="center"
+            android:id="@+id/btncerrar"
+            />
+
     </LinearLayout>
 
     <com.google.android.material.navigation.NavigationView
-        android:background="#98E1EA"
+        android:background="#AEBAF8"
         android:id="@+id/navigation_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
